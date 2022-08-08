@@ -12,39 +12,40 @@ let peliculas=[
     {
     titulo:"transformers",
     director:"steven spielberg",
-    fecha:2007    
+    fecha:new Date(1,2,2007)    
 },
 {
     titulo:"Avengers",
     director:"Kevin feige",
-    año:2012
+    año:new Date(1,3,2012)
 },
 {
     titulo:"Thor Ragnarok",
     director:"Taika waititi",
-    año:2016
+    año:new Date(1,2,2016)
 }
 ]
 // - Una nueva lista que contenga las películas posteriores 
 //al 1 de enero de 2010 (utilizando filter)
-let nuevalistapelis=peliculas.filter(y=>y.año>=2010)
-console.log(nuevalistapelis)
-
+let nuevalistapelis=peliculas.filter(y=>y.año>=new Date(1,1,2010))
 // - Una nueva lista que contenga los directores de la lista de películas
 // original (utilizando map)
-let directores=peliculas.map(director=>{
-    return 
+let directores=peliculas.map(pelicula=>{
+    return pelicula.director
 })
-console.log(directores)
-
 // - Una nueva lista que contenga los títulos 
 //de la lista de películas original (utilizando map)
-
+let titulos=peliculas.map(pelicula=>{
+    return pelicula.titulo
+})
 // - Una nueva lista que concatene 
 //la lista de directores y la lista de los títulos (utilizando concat)
-
+let dir_tit=directores.concat(titulos)
 // - Una nueva lista que concatene la 
-//lista de directores y la lista de los títulos (utilizando el factor de propagación)
+//lista de directores y la 
+//lista de los títulos (utilizando el factor de propagación)
+let dir_tit2=[...directores, ...titulos]
+
 
 
 

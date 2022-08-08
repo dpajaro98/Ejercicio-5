@@ -45,23 +45,3 @@ let dir_tit=directores.concat(titulos)
 //lista de directores y la 
 //lista de los títulos (utilizando el factor de propagación)
 let dir_tit2=[...directores, ...titulos]
-
-
-
-
-
-
-//_-_*Metodos para insertar datos*_-_
-//push es para mutar la lista al final de la lista
-
-//unshift es para mutar la lista al principio de la lista
-compra.unshift(3)
-//_-_*Metodos para eliminar datos*_-_
-//pop es para eliminar valores al final de la lista
-compra
-
-
-
-//shift es para eliminar valores al principio
-
-console.log(compra)

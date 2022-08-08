@@ -37,11 +37,14 @@ let directores=peliculas.map(director=>{
 })
 console.log(directores)
 
-// - Una nueva lista que contenga los títulos de la lista de películas original (utilizando map)
+// - Una nueva lista que contenga los títulos 
+//de la lista de películas original (utilizando map)
 
-// - Una nueva lista que concatene la lista de directores y la lista de los títulos (utilizando concat)
+// - Una nueva lista que concatene 
+//la lista de directores y la lista de los títulos (utilizando concat)
 
-// - Una nueva lista que concatene la lista de directores y la lista de los títulos (utilizando el factor de propagación)
+// - Una nueva lista que concatene la 
+//lista de directores y la lista de los títulos (utilizando el factor de propagación)
 
 
 
